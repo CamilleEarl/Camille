@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reminders</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="layout.css" rel="stylesheet" />
+  <link href="flex.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Medication Adherence</h1>
+      <p>
+         Helping patients, caregivers, and healthcare providers monitor and improve medication adherence for patients with chronic illness.
+      </p>
+    <nav class="horizontal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Reminders.html">Reminders</a></li>
+        <li><a href="Reports_and_Analysis.html">Reports and Analysis</a></li>
+        <li><a href="View_Providers.html">View Providers</a></li>
+        <li><a href="View_Caregivers.html">View Caregivers</a></li>
+        <li><a href="Add_Medication.html">Add Medication</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Reminders</h2>
+    <p>Set and manage medication reminders for patients.</p>
+
+  <form>
+      <label>Medication Name:</label>
+      <input type="text" name="medication" placeholder="Enter medication name" required />
+
+      <label>Date:</label>
+      <input type="date" name="date" required />
+
+      <label>Time:</label>
+      <input type="time" name="time" required />
+
+      <button type="submit">Add Reminder</button>
+  </form>
+
+    <table class="report-table"
+      <thead>
+        <tr>
+          <th>Medication</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Olanzapine</td>
+          <td>2025-06-25</td>
+          <td>08:00 AM</td>
+          <td>Pending</td>
+        </tr>
+        <tr>
+          <td>Olanzapine</td>
+          <td>2025-06-24</td>
+          <td>08:00 AM</td>
+          <td>Completed</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+  <footer>
+    &copy; 2025 Medication Adherence | Created by Camille Earl
+  </footer>
+</body>
+</html>

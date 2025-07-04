@@ -1,0 +1,269 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  color: #333232;
+}
+
+header {
+  background: rgb(93, 159, 161);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+nav.horizontal ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+}
+
+nav.horizontal li {
+  margin: 0.5em;
+}
+
+nav.horizontal a {
+  color: white;
+  text-decoration: none;
+}
+
+nav.horizontal a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1em;
+}
+
+.caregiver-table {
+  width: 90%;
+  max-width: 800px;
+  margin: 2em auto;
+  border-collapse: collapse;
+  border: 2px solid;
+  border-radius: 8px;
+  background-color: #f4faff;
+}
+
+.caregiver-table th {
+  background-color: #0074D9;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  text-align: center;
+}
+
+  .caregiver-table td {
+  border: 1px solid #cbc8c8;
+  padding: 1em;
+  text-align: center;
+  }
+
+  .update-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.update-caregivers-button {
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1.1em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.update-caregivers-button:hover {
+  background-color: #0361a5;
+}
+
+.update-providers-button:hover {
+  background-color: #0361a5;
+}
+
+.provider-table {
+  width: 90%;
+  max-width: 800px;
+  margin: 2em auto;
+  border-collapse: collapse;
+  border: 2px solid #017be5;
+  background-color: #f4faff;
+  border-radius: 8px;
+}
+
+.provider-table th {
+  background-color: #0074D9;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  text-align: center;
+}
+
+.provider-table td {
+  border: 1px solid #ccc;
+  padding: 1em;
+  text-align: center;
+}
+
+.update-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.update-providers-button {
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1.1em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.report-table {
+  width: 90%;
+  max-width: 800px;
+  margin: 2em auto;
+  border-collapse: collapse;
+  border: 2px solid #0074D9;
+  background-color: #f4faff;
+  border-radius: 8px;
+}
+
+.report-table th {
+  background-color: #0074D9;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  text-align: center;
+}
+
+.report-table td {
+  border: 1px solid #ccc;
+  padding: 1em;
+  text-align: center;
+}
+
+.add-date-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.add-date {
+  background-color: #037ce7;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1.1em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-date:hover {
+  background-color: #0361a5;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  max-width: 800px;
+  margin: 2em auto;
+}
+
+.dashboard-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #97c3ea;
+  color: rgb(87, 85, 85);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 1em;
+  background-position: center;
+}
+
+.box-reminders {
+  background-image: url('R.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box-reports {
+  background-image: url('reports.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box-providers {
+  background-image: url('doctor.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box-caregivers {
+  background-image: url('hand.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box-medication {
+  background-image: url('pill.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dashboard-box:hover {
+  background-color: #0267ae;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav.horizontal ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-box {
+    height: 120px;
+    font-size: 1em;
+  }
+}
+
+form fieldset {
+  padding: 1.5em;
+  border: 2px solid #0276db;
+  border-radius: 8px;
+  margin: 2em auto;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+form input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #d4d3d3;
+}

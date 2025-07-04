@@ -1,0 +1,42 @@
+main {
+  padding: 2em;
+}
+
+form{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+form input{
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+form button {
+  width: 100%;
+  padding: 1em;
+  background-color: #0074D9;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
